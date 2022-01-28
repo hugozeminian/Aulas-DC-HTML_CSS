@@ -1,0 +1,80 @@
+*{	/* aplicado em todos os elementos do CSS */
+	/* aplicando um reset nas configurações do navegador */
+	margin: 0;
+	padding: 0;
+}
+
+/* Site responsivo */
+
+html,body {
+	height: 100%; /* Para ser responsivo, deixar configurado o html e body com altura em 100%, a largura por padrão já é 100% */
+}
+
+
+.input1 > input[type=file]{
+	display: none;
+}
+
+.input1 > label {
+	display: block;
+	margin: 40px auto;
+	cursor: pointer;
+	font-size: 17px;
+	width: 220px;
+	height: 40px;
+	background-color: #ccc;
+	color: white;
+	text-align: center;
+	line-height: 40px; 
+}
+
+.option1 {
+	text-align: center;
+	background-color: #ccc;
+	padding: 30px 0;
+}
+
+.option1 > select {
+	width: 220px;
+	height: 30px;
+	border: 0;
+	padding-left: 10px;
+	background-image: url('../imagens/sprite.png');
+	background-size: 10px 20px;
+	background-repeat: no-repeat;
+	background-position: 96% 8px;
+	appearance: none;
+	-webkit-appearance:none;
+	-moz-appearance:none;
+}
+
+.option1 > select::-ms-expand {
+	display: none;
+}
+
+.input2 {
+	margin: 10px auto ;
+	text-align: center;
+	background-color: #ccc;
+	padding: 30px 0;
+}
+
+.input2 > div > input[type=checkbox] {
+	display: none;
+}
+
+.input2 > div > label{
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	background-color: green;
+}
+
+/* o sinal de mais faz referencia a pegar o elemento debaixo */
+.input2 > div > input[type=checkbox]:checked + label{ 
+	background-color: red;
+	width: 100px;
+}
+
+
+

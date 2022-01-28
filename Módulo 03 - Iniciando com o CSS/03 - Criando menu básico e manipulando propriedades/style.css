@@ -1,0 +1,35 @@
+*{		/* aplicado em todos os elementos do CSS */
+	/* aplicando um reset nas configurações do navegador */
+	margin: 0;
+	padding: 0;
+}
+
+.menu {
+	width: 900px;
+	background-color: red;
+	text-align: center;
+	margin: 50px auto;	/* margem se ajusta automaticamente (sentido horário)*/
+	/* resumo da margem de cima */
+	/* margin-left: 10px;
+	margin-right:  10px;
+	margin-top: 10px;
+	margin-bottom: 10px;*/
+
+	padding-bottom: 90px; /*espaçamento interno*/
+}
+
+.menu > a {
+		color: blue;
+	}
+
+.menu a {
+		text-decoration: none;
+		border: 3px solid green;
+		color: orange;
+		font-size: 20px;
+		margin:0 10px;
+	}
+
+
+
+}

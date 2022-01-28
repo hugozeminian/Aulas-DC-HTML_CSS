@@ -1,0 +1,47 @@
+*{	/* aplicado em todos os elementos do CSS */
+	/* aplicando um reset nas configurações do navegador */
+	margin: 0;
+	padding: 0;
+}
+
+/* Site responsivo */
+
+html,body {
+	height: 100%; /* Para ser responsivo, deixar configurado o html e body com altura em 100%, a largura por padrão já é 100% */
+}
+
+.box {
+	width: 40%;
+	height: 300px;
+	color: gray;
+}
+
+/*
+.box2 {
+	width: 250px;
+	background: green;	
+}
+*/
+
+.box p {
+	color: initial;
+	margin: initial; /* ira utilizar o valor default do navegador*/
+}
+
+/*
+.box2 > p {
+	display: inline-block;
+	/*
+	width: inherit;
+	height: inherit;
+	background: inherit; /* inherit = herdar, ou seja, irá herdar os valores da classe pai. 
+	*/
+}
+/*
+@media screen and (max-width: 568px) { /* Design responsivo, será estudo em aulas futuras 
+	.box {
+		height: auto;
+	}
+}
+
+*/

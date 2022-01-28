@@ -1,0 +1,41 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+html,body{
+	height: 100%;
+}
+
+/* fonte com link */
+.fonte_externa{
+	font-weight: 300;
+	font-family: 'Open Sans', sans-serif;
+}
+
+/* fonte com arquivo */
+@font-face{
+	src:url("../fontes/OpenSans-Bold.ttf");
+	font-family: "Minha Fonte"
+}
+.fonte_interna{
+	font-family: "Minha Fonte";
+}
+
+/* important -> itens com uma prioridade/especificação menor passam a ser prioritários */
+.box > p {
+	font-family: "Minha Fonte"
+}	
+.text {
+	font-family: "Arial" !important
+}
+
+
+/* "*" serve para pegar todos os elementos, exemplos:
+form > *; -> Devido o sinal de ">", pegará todos os elementos que estão diretamente dentro de formulário. Portanto se tiver encapsulado dentro de uma "div" não irá ser aplicado.
+form *;   -> Sem especificação, pegará absolutamente tudo dentro de formulário. Portanto, "div" filha, filha de filha, etc.
+*/
+form *{
+	font-family: "Minha Fonte";
+}
+

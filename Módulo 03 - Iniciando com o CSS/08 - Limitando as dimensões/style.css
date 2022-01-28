@@ -1,0 +1,25 @@
+*{		/* aplicado em todos os elementos do CSS */
+	/* aplicando um reset nas configurações do navegador */
+	margin: 0;
+	padding: 0;
+}
+
+/* Site responsivo */
+
+html,body {
+	height: 100%; /* Para ser responsivo, deixar configurado o html e body com altura em 100%, a largura por padrão já é 100% */
+}
+
+.header {
+	width: 100%;
+	min-width: 1280px;
+	height: 200px;
+	background: gray;
+}
+
+.article {
+	margin: 0 auto;
+	width: 1280px;
+	height: 600px;
+	background: red;
+}

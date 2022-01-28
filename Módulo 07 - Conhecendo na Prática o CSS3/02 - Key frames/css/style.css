@@ -1,0 +1,85 @@
+*{
+ margin:0;
+ padding:0;
+ box-sizing: border-box;
+}
+
+div.box{
+	width: 300px;
+	height: 300px;
+	background-color: green;
+	animation-name: animacao_1;
+	animation-duration: 2s;
+	/*animation-iteration-count: 2;*/ /* quantidade de repetição */
+	animation-iteration-count: infinite;
+	animation-delay: 1s;
+}
+
+@keyframes animacao_1{
+	from{
+		background-color: green;
+	}
+	to{
+		background-color: red;
+	}
+}
+
+
+div.box2{
+	width: 300px;
+	height: 300px;
+	position: relative;
+	background-color: green;
+	animation-name: animacao_2;
+	animation-duration: 2s;
+	/*animation-iteration-count: 2;*/ /* quantidade de repetição */
+	animation-iteration-count: infinite;
+	animation-delay: 1s;
+}
+/*também pode ser definido de 0% a 100% e possuir valores intermediarios, conforme abaixo: */
+@keyframes animacao_2{
+	0%{
+		left: 0;
+		top: 0px;
+		background-color: green;
+	}
+	25%{
+		left: 100px;
+		top: 100px;
+		background-color: orange;
+	}
+	100%{
+		left: 0;
+		top: 0;
+		background-color: red;
+	}
+}
+
+/* resumindo em uma linha */
+div.box3{
+	width: 300px;
+	height: 300px;
+	position: relative;
+	background-color: green;
+	animation: animacao_3 2s infinite;
+	animation-delay: 2s;
+}
+@keyframes animacao_3{
+	0%{
+		left: 0;
+		top: 0px;
+		background-color: green;
+	}
+	25%{
+		left: 100px;
+		top: 100px;
+		background-color: orange;
+	}
+	100%{
+		left: 0;
+		top: 0;
+		background-color: red;
+	}
+}
+	
+

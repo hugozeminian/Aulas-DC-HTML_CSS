@@ -1,0 +1,55 @@
+*{	/* aplicado em todos os elementos do CSS */
+	/* aplicando um reset nas configurações do navegador */
+	margin: 0;
+	padding: 0;
+}
+
+/* Site responsivo */
+
+html,body {
+	height: 100%; /* Para ser responsivo, deixar configurado o html e body com altura em 100%, a largura por padrão já é 100% */
+}
+
+/*
+table.table1 {
+	width: 900px;
+	border-collapse: collapse; /* permitir a colisão de borda 
+	margin: 0 auto;
+}
+
+table tr td {
+	background-color: rgb(200,200,200);
+	height: 300px;
+	vertical-align: top;
+	border: 2px solid black;
+}
+*/
+
+/* POSITION - informa onde a div irá ficar, ex: fixed - ficará sempre no topo mesmo com o scroll descendo
+- fixed
+- left
+- top
+- bottom
+*/
+.menu-fixed {
+	position: fixed;
+	right: 	0px;
+	top: 300px;
+	width: 300px;
+	height: 200px;
+	background: #069;
+}
+
+.menu-fixed {
+	font-size: 30px;
+}
+
+.box {
+	width: 100%;
+	height: 1400px;
+	background: green;
+}
+
+.box p {
+	width: 400px;
+}

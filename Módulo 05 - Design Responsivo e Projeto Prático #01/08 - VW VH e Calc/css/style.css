@@ -1,0 +1,50 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+html,body{
+	height: 100%;
+}
+
+.sidebar{
+	width: 300px;
+	height: 100%;
+	background: black;
+	float: left;
+}
+
+.content{
+	float: left;
+	/* função CALC permite misturar % e px */
+	width: calc(100% - 300px); /* Obrigatoriamente, manter o espaçamento para o calculo funcionar */
+	height: 100%;
+	background: #ccc;
+}
+
+.box-calc{
+	width: calc((100% / 3) + 90px);
+	height: 90px;
+	background-color: gold; 
+}
+
+/*
+VW = Viewport Width -> Largura do viewport;
+VH = Viewport Height -> Altura do viewport;
+obs: O viewport, não considera a scrollbar, por este motivo gera uma nova scrollbar no outro sentido. 
+Diferente do % que não gera scrollbar.
+ */
+.box{
+	width: 100vw;
+	height: 100vh;
+	background-color: red;
+}
+
+
+
+
+
+
+
+
+

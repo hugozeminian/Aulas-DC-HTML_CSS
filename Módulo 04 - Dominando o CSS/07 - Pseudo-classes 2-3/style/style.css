@@ -1,0 +1,75 @@
+*{	/* aplicado em todos os elementos do CSS */
+	/* aplicando um reset nas configurações do navegador */
+	margin: 0;
+	padding: 0;
+}
+
+/* Site responsivo */
+
+html,body {
+	height: 100%; /* Para ser responsivo, deixar configurado o html e body com altura em 100%, a largura por padrão já é 100% */
+}
+
+ul	{
+	list-style-position: inside; /* Pontuação */
+}
+
+/* A pseudo-classe :nth-of-type() corresponde a um ou mais elementos de um dado tipo, baseado em sua posição entre um grupo de irmãos */
+ul li:nth-of-type(2){
+	color: red;
+}
+
+
+/* A pseudo-classe :nth-child() seleciona elementos com base em suas posições em um grupo de elementos irmãos. */
+ul li:nth-child(4){
+	color: blue;
+}
+
+.box {
+	width: 100%
+}
+
+.item {
+	float: left;
+	width: 33.3%;
+	height: 400px;
+	background-color: red;
+	border:	1px solid black;
+	box-sizing: border-box;
+}
+
+/* A pseudo-class :last-of-type representa o último irmão com o nome de elemento dado na lista de filhos de seu elemento pai*/
+.box div:last-of-type, .box p:last-of-type {
+	background-color: green;
+	color: rgb(200,200,200);
+}
+
+.box div:last-of-type {
+	background-color: blue;
+}
+
+/* A pseudo-classe :last-child representa qualquer elemento que é o último filho de seu elemento pai. */
+.box span:last-child {
+	background-color: gray;
+}
+
+/* A pseudo-classe CSS de negação, :not(X), é uma notação funcional que recebe um seletor simples X como argumento. Ela seleciona um elemento que não é representado por seu argumento. X não pode conter outro seletor de negação */
+.box2 div:not(.um) {
+	background-color: yellow;
+}
+
+/* A pseudo-classe CSS :empty representa qualquer elemento que não tenha filhos. Aqui, filhos podem ser outros elementos ou blocos de texto (incluindo espaços em branco). Comentários e instruções de processamento não são considerados ao se determinar se um elemento é vazio. */
+.box3 p:empty {
+	width: 200px;
+	height: 200px;
+	background-color: orange;
+}
+
+/* Em CSS, ::after cria um pseudo-elemento que é o último filho do elemento selecionado. Muitas vezes é usado para adicionar e melhorar o conteúdo de um elemento como a propriedade content. É inline por padrão. */
+.box3 .nome:after {
+	content: " *Hugo* <- CSS pseudo elemento AFTER"
+}
+
+.box3 .nome:Before {
+	content: "CSS pseudo elemento BEFORE -> *Meu nome é:* "
+}

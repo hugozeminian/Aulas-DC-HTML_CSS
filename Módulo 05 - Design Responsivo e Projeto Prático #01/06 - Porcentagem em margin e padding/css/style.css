@@ -1,0 +1,16 @@
+*{
+	margin: 0;
+	padding: 0;
+} /* ao usar %, ele sempre terá como referência o elemento pai, vide exemplo */
+
+.parent{
+	width: 400px;
+	height: 400px;
+	background-color: orange;
+}
+
+.child{
+	width: 50%;
+	height: 50%;
+	background-color: blue;
+}

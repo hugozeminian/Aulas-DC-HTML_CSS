@@ -1,0 +1,52 @@
+*{
+ margin:0;
+ padding:0;
+ box-sizing: border-box;
+}
+
+/**** border-radius ****/
+.radius{
+	width: 200px;
+	height: 200px;
+	background: black;
+	margin: 50px auto;
+	/*border-radius: 50px;*/ /* circulo*/
+	border-top-right-radius: 20px; /* apenas um lado */ 
+}
+
+.radius2{ /* responsivo */
+	position: absolute;
+	left: 0;
+	top: 100px;
+	width: 25%;
+	height: 25%;
+	border-radius: 50%;
+	background: orange;
+}
+
+.elipse{
+	margin: auto;
+	background: red;
+	height: 100px;
+    width: 150px;
+    border-radius: 50%;
+}
+/* os parâmetro podem ser aplicado nos eixos X, Y, X veja exeplos w3schools */
+.transform{
+	transform: translate(-50%,-50%); /* translate -> manipular posição na vertical e horizontal */
+	width: 40%;
+	height: 300px;
+	border: 3px solid #ccc;
+	border-radius: 8px;
+	position: absolute;
+	left: 50%;
+	top: 600px;
+}
+
+.transform:hover{
+	transform: translate(-50%,-50%) rotatez(360deg) scale(2,2); 
+	/* rotate -> rotacionar elemento */
+	/* scale -> altera a escala do elemento */
+	transition: 2s;
+}
+

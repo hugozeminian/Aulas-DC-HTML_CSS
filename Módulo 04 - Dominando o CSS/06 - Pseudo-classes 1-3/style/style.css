@@ -1,0 +1,69 @@
+*{	/* aplicado em todos os elementos do CSS */
+	/* aplicando um reset nas configurações do navegador */
+	margin: 0;
+	padding: 0;
+}
+
+/* Site responsivo */
+
+html,body {
+	height: 100%; /* Para ser responsivo, deixar configurado o html e body com altura em 100%, a largura por padrão já é 100% */
+}
+
+.teste, .teste1, .teste2 {
+	width: 300px;
+	margin-top: 30px;
+	margin-left: 30px;
+	margin-right: 30px;
+	display: inline-block; 
+	height: 300px;
+	background-color: #ccc;
+}
+
+.teste1 {
+	background-color: rgb(98,98,98);
+}
+
+.teste2 {
+	background-color: rgb(50,50,50);
+}
+
+/* pseudo classe */ /* HOVER - Irá ativar quando o mouse estiver em cima do elemento. Obs.: não pode ter espaço entre ".teste:hover" */
+.teste:hover { 
+	background-color: blue;
+	height: 500px;
+}
+
+.teste:HOVER, .teste1, .teste2{
+	vertical-align: top;
+}
+
+/* pseudo classe */ /* ACTIVE - Irá ativar quando o mouse estiver pressionado no elemento. */
+.teste:ACTIVE {
+	background-color: black;
+}
+
+/* pseudo classe */ /* FOCUS - Irá ativar quando clicar no item de formulário (função de focar), neste caso input type="text" */
+.teste3:FOCUS {
+	background-color: red;
+}
+
+.teste4:FOCUS {
+	background-color: black;
+	color: green;
+	display: block;
+	width: 400px;
+	height: 600px;
+}
+
+/* pseudo classe */ /* VISITED - Irá interagir diretamente no link após ele ser clicado, neste caso deixando ele roxo */
+/* Não está funcionando no Chrome, mas funcionou no FireFox. Está seguindo corretamente o W3School */
+.link1:visited {
+	color: purple;
+}
+
+/* pseudo classe */ /* LINK - Irá interagir diretamente no link, neste caso deixando ele laranja */
+.link1:link {
+	color: orange;
+}
+

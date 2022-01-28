@@ -1,0 +1,36 @@
+*{		/* aplicado em todos os elementos do CSS */
+	/* aplicando um reset nas configurações do navegador */
+	margin: 0;
+	padding: 0;
+}
+
+/* Site responsivo */
+
+html,body {
+	height: 100%; /* Para ser responsivo, deixar configurado o html e body com altura em 100%, a largura por padrão já é 100% */
+}
+
+.clear {
+	clear: both;
+}
+
+.pai {
+	width: 1280px;
+	padding: 20px 0;
+	margin: 20px auto;	
+	background: blue;
+
+}
+
+.child {
+	box-sizing: border-box;
+	width: 640px;
+	height: 300px;
+	background: red;
+	float: left;
+	text-align: center;
+	font-size: 40px;
+	color: white;
+	padding: 50px 0;
+	border: 10px solid black;
+}

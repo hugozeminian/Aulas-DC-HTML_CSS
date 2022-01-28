@@ -1,0 +1,38 @@
+*{		/* aplicado em todos os elementos do CSS */
+	/* aplicando um reset nas configurações do navegador */
+	margin: 0;
+	padding: 0;
+}
+
+/* Site responsivo */
+
+html,body {
+	height: 100%; /* Para ser responsivo, deixar configurado o html e body com altura em 100%*/
+}
+
+ .artigo {
+ 	width: auto; /* Para ser responsivo, deixar configurado o width em auto*/
+ 	height: auto; /* Para ser responsivo, deixar configurado o width em auto*/
+ 	background-color: rgb(100,100,100);
+ 	text-align: center;
+ }
+
+ .artigo h1 {
+ 	color: rgb(3, 236, 252);
+ 	font-size: 23px;
+ 	font-family: "tahoma";
+ 	font-style: normal;
+ 	font-weight: normal;
+ 	/*font-variant: small-caps;*/
+ }
+
+ .artigo p {
+ 	color: #b4b4b4;
+ 	text-align: left;
+ 	font-size: 17px;
+ 	font-family: tahoma;
+ 	font-style: normal;
+ 	font-weight: bold;
+ 	line-height: 40px;
+ 	margin-top: 12px;
+ }

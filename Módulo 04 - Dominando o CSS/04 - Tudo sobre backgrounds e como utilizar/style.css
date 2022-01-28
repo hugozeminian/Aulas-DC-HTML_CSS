@@ -1,0 +1,29 @@
+*{	/* aplicado em todos os elementos do CSS */
+	/* aplicando um reset nas configurações do navegador */
+	margin: 0;
+	padding: 0;
+}
+
+/* Site responsivo */
+
+html,body {
+	height: 100%; /* Para ser responsivo, deixar configurado o html e body com altura em 100%, a largura por padrão já é 100% */
+}
+
+.bg	{
+	width: 500px;
+	height: 500px;
+	margin: 0 auto;
+
+	/*backgrouds*/
+	background-color: red;
+	background-image: url('imagens/CTowerWeb-VisitImage2.jpg'); 
+	/*se o style estivesse dentro de uma pasta, seria necessário utilizar ".." para voltar um nível. ex: "../imagens/CTowerWeb-VisitImage2.jpg"*/
+	/*background-size: 100% auto;*/ /* 100% largura e automatico na altura; também é possível definir tamanho fixo em px; é possível utilizar o comando COVER para cobrir tudo, útil em responsivo */
+	background-size: contain;
+	background-repeat: no-repeat; /* impedir que o fundo se repita; também é possível informar para se repetir apenas no eixo x ou y */
+	background-position: center; /* orientar a imagem, center top bottom left right ou px */
+	
+}
+
+

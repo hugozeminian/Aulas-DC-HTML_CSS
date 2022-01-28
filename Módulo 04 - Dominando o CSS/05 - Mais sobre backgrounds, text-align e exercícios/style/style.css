@@ -1,0 +1,63 @@
+*{	/* aplicado em todos os elementos do CSS */
+	/* aplicando um reset nas configurações do navegador */
+	margin: 0;
+	padding: 0;
+}
+
+/* Site responsivo */
+
+html,body {
+	height: 100%; /* Para ser responsivo, deixar configurado o html e body com altura em 100%, a largura por padrão já é 100% */
+}
+
+.bg	{
+	/*width: 100vw;*/ /* Viewport Width - Design responsívo*/
+	/*height: 100vh;*/ /* Viewport Height - Design responsívo*/
+	/*width: 100%;*/
+	/*
+	height:30vw;
+	margin: 0 auto;
+	background-image: url('../imagens/CTowerWeb-VisitImage2.jpg');
+	background-color: red;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed; /* default = scroll, irá seguir o documento; fixed - será com base no VW
+	*/
+	/*
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	*/
+}
+
+/* design responsivo, sempre segue a mesma proporção */
+.box {
+	width: 100%;
+	margin: 80px auto;
+	text-align: center;
+	background-color: rgb(200,200,200);
+	/*height: 2000px;*/
+	/*background-color: rgb(100,100,100);*/
+}
+
+.item {
+	/*margin: 0 40px;*/
+	width: 33.3%;
+	margin-right: -4px;
+	background-color: orange;
+	display: inline-block;
+}
+
+.item img {
+	width: 30%;
+}
+
+.item p {
+	background-color: green;
+	display: inline-block;
+	text-align: left;
+}
+
+.last {
+	margin-right: 0; 
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Iniciando e entendendo estilos</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css"> <!-- CSS link externo *** 3ª prioridade -->
+	<style type="text/css"> /* comentário CSS */ /* Estilo na página *** 2ª prioridade */
+		h1{
+			color: blue;
+		}
+
+		h2{	
+			color: yellow;
+			background: green;
+		}
+
+		h3,h4{
+			color: orange;
+			font-size: 17px;
+		}
+
+		span{
+			color: pink;
+		}
+
+		a{	
+			color: black;
+			text-decoration: none;
+		}
+		
+	</style>
+</head>
+<body>
+	<h1 style="color: red"; font-size: 50px>Título 1</h1> <!-- IN LINE *** 1ªprioridade -->
+	<h2 style="color: blue"; font-size: 25>Título 2</h2>
+	<h3 style="color: blue"; font-size: 20px>Título 3</h3>
+	<h4>Título 4</h4>
+	<h5>Título 5</h5>
+	<h6>Título 6</h6>
+	<p>Olá mundo, parágrafo</p>
+	<span>Olá mundo, span</span>
+	<a href="">Link</a>
+
+
+	<div id="div1" class="div1">
+		<h1>Meu título 1</h1>
+	</div>
+
+	<div id="div2" class="div2">
+		<h1>Meu título 2</h1>
+	</div>
+
+</body>
+</html>

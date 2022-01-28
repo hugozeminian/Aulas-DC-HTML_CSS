@@ -1,0 +1,26 @@
+*{		/* aplicado em todos os elementos do CSS */
+	/* aplicando um reset nas configurações do navegador */
+	margin: 0;
+	padding: 0;
+}
+
+/* Site responsivo */
+
+html,body {
+	height: 100%; /* Para ser responsivo, deixar configurado o html e body com altura em 100%, a largura por padrão já é 100% */
+}
+
+
+.box {
+	width: 300px;
+	height: 200px;
+	margin: 0 auto;
+	background: gray;	
+/* 	overflow: hidden; *//* esconde o que esta ultrapassando a sua altura */
+	overflow: auto; /* cria scroll bar automaticamente caso necessario */
+	overflow-x: auto; /*atua com scroll bar na horizontal, dessa maneira o vertical passa a ser auto */
+}
+
+.box p {
+	width: 500px;
+}

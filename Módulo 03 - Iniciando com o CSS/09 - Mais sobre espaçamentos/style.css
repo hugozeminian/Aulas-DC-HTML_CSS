@@ -1,0 +1,29 @@
+*{		/* aplicado em todos os elementos do CSS */
+	/* aplicando um reset nas configurações do navegador */
+	margin: 0;
+	padding: 0;
+}
+
+/* Site responsivo */
+
+html,body {
+	height: 100%; /* Para ser responsivo, deixar configurado o html e body com altura em 100%, a largura por padrão já é 100% */
+}
+
+.center {
+	/*box-sizing: border-box;*/ /*utilizado nos design responsivos*/
+	width: 1280px;
+	margin: 0 auto;
+	background-color: gray;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+} 
+
+.artigo {
+	/*margin: 50px 30px 50px 30px;*/ /* Cima, direita, baixo, esquerda */
+	/*margin: 50px 30px;*//*Cima-Baixo e Esquerda-Direita*/
+	width: 100%;
+	margin-bottom: 40px;
+}
